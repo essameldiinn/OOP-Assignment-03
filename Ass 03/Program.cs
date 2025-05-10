@@ -15,7 +15,7 @@ namespace CompanyEmployeeApp
         Developer,
         Secretary,
         DBA,
-        SecurityOfficer // Full Permissions
+        SecurityOfficer
     }
 
     // Class to represent Hiring Date
@@ -61,7 +61,7 @@ namespace CompanyEmployeeApp
         }
     }
 
-    // Class for Employee
+    // Class Employee
     public class Employee
     {
         public int ID { get; set; }
