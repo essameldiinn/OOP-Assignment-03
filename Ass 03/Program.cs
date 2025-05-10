@@ -5,8 +5,8 @@ namespace CompanyEmployeeApp
 {
     public enum Gender
     {
-        M, // Male
-        F  // Female
+        M, 
+        F  
     }
 
     public enum SecurityLevel
@@ -18,7 +18,7 @@ namespace CompanyEmployeeApp
         SecurityOfficer
     }
 
-    // Class to represent Hiring Date
+    #region Class Hiring Date
     public class HiringDate : IComparable<HiringDate>
     {
         public int Day { get; set; }
@@ -60,8 +60,9 @@ namespace CompanyEmployeeApp
             return $"{Day:D2}/{Month:D2}/{Year}";
         }
     }
+    #endregion
 
-    // Class Employee
+    #region Class Employee
     public class Employee
     {
         public int ID { get; set; }
@@ -86,7 +87,8 @@ namespace CompanyEmployeeApp
             return $"ID: {ID}, Name: {Name}, Security: {Security}, Gender: {Gender}, " +
                    $"Salary: {string.Format(CultureInfo.InvariantCulture, "{0:C}", Salary)}, Hire Date: {HireDate}";
         }
-    }
+    } 
+    #endregion
 
     class Program
     {
